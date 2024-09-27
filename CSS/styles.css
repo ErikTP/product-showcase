@@ -66,3 +66,49 @@ header{
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+/*------- Introduktionsinnehåll -------*/
+.introduktion-text {
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 18px;
+    background-color: rgb(244, 162, 97);
+    color: white;
+    border-radius: 10px;
+}
+
+/*------- Produktgalleri -------*/
+.produkt-sektion {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 1rem;
+    box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.103);
+}
+
+.produkt-underrubrik {
+    color: #ff865c;
+}
+
+.produkter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.produkter figure {
+    text-align: center;
+}
+
+.produkter img {
+    width: 100%;
+    aspect-ratio: 1/2;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
