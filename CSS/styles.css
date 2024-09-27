@@ -1,0 +1,42 @@
+/*------- Den universella CSS-väljaren -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #222;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-style: normal;
+}
+
+header{
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+/*------- Navbar -------*/
+.navigation {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 1.5rem;
+    list-style-type: none;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
