@@ -197,6 +197,33 @@ footer {
     text-align: center;
     width: 80%;
     margin: auto;
+    padding: 2rem;
+    box-shadow: 1px 1px 1px 1px rgb(244, 162, 97);
+}
+
+.vårt-team{
+    margin-top: 0.5rem;
+}
+    
+.företag-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.företag-team img{
+    width: 80%;
+    height: 50vh;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.företag-team img:hover{
+    filter: brightness(70%);
 }
 
 /*----------------- RESPONSIVA MEDIA QUERIES -----------------*/
@@ -220,6 +247,15 @@ footer {
     .produkt-kort{
         width: 90%;
     }
+
+    .om-oss-behållare{
+        font-size: 1.2rem;
+    }
+
+    .företag-team{
+        flex-direction: column;
+    }
+
 }
 
 /*------- För surfplattor och större skärmstorlek -------*/
@@ -243,6 +279,19 @@ footer {
 
     .produkt-kort{
         width: 35%;
+    }
+
+    .om-oss-behållare{
+        font-size: 1.1rem;
+    }
+
+    .företag-team figure{
+        width: 50%;
+    }
+
+    .företag-team{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -268,5 +317,18 @@ footer {
 
     .produkt-kort{
         width: 20%;
+    }
+
+    .om-oss-behållare{
+        font-size: 1rem;
+    }
+
+    .företag-team figure{
+        width: 25%;
+    }
+
+    .företag-team{
+        flex-direction: row;
+        
     }
 }
