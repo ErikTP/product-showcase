@@ -201,29 +201,59 @@ footer {
     box-shadow: 1px 1px 1px 1px rgb(244, 162, 97);
 }
 
-.vårt-team{
-    margin-top: 0.5rem;
-}
-    
-.företag-team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+.vår-historia, .vårt-team {
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-left: 6px solid #FF865C;
+    border-right: 6px solid #FF865C;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.669);
 }
 
-.företag-team img{
-    width: 80%;
+.vår-historia h2, .vårt-team h2 {
+    color: #FF865C;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.vår-historia p, .vårt-team p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+.företag-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.företag-team figure {
+    margin: 1rem;
+    text-align: center;
+}
+
+.företag-team img {
+    width: 100%;
     height: 50vh;
     object-fit: cover;
-    aspect-ratio: 1/1;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.företag-team img:hover{
+.företag-team img:hover {
+    transform: scale(1.05);
     filter: brightness(70%);
+}
+
+.företag-team figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 600;
 }
 
 /*----------------- RESPONSIVA MEDIA QUERIES -----------------*/
