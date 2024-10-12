@@ -49,10 +49,10 @@ header {
 }
 
 .huvud-sektion img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%;              /* Bilden täcker hela bredden av sin container */
+    height: 60vh;             /* Ställ in höjd i viewport-höjd (vh) för att vara responsiv */
+    object-fit: cover;        /* Bilden täcker hela området utan att förvrängas */
+    object-position: center;  /* Centrerar bilden */
 }
 
 .huvudrubrik {
@@ -300,6 +300,10 @@ footer {
         margin-bottom: 1.5rem;
     }
 
+    .huvud-sektion img {
+        height: 45vh;
+    }
+
 }
 
 /*------- För surfplattor och större skärmstorlek -------*/
@@ -317,7 +321,7 @@ footer {
     }
 
     .huvudrubrik {
-        top: 40%;
+        top: 30%;
         font-size: 1rem;
     }
 
@@ -354,7 +358,7 @@ footer {
     }
 
     .huvudrubrik {
-        top: 50%;
+        top: 35%;
         padding: 15px 30px;
         font-size: 1rem;
     }
@@ -374,5 +378,9 @@ footer {
     .vår-historia, .vårt-team {
         width: 85%; 
         margin-bottom: 2rem;
+    }
+
+    .huvud-sektion img {
+        height: 75vh;
     }
 }
