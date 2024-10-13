@@ -49,10 +49,10 @@ header {
 }
 
 .huvud-sektion img {
-    width: 100%;              /* Bilden täcker hela bredden av sin container */
-    height: 60vh;             /* Ställ in höjd i viewport-höjd (vh) för att vara responsiv */
-    object-fit: cover;        /* Bilden täcker hela området utan att förvrängas */
-    object-position: center;  /* Centrerar bilden */
+    width: 100%;              
+    height: 60vh;             
+    object-fit: cover;        
+    object-position: center;  
 }
 
 .huvudrubrik {
